@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gregs List</title>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -46,9 +47,130 @@
       </form>
     </div>
     <div id="cars" class="row">
+    </div>
+
+    <div class="row justify-content-center">
+      <h1 class="col-12">Make a house!</h1>
+      <form onsubmit="app.controllers.houseController.addHouse(event)" class="col-5">
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="number" class="form-control" name="year" id="year" placeholder="Type in a year" required>
+        </div>
+        <div class="form-group">
+          <label for="squareFeet">square feet</label>
+          <input type="number" class="form-control" name="squareFeet" id="squareFeet"
+            placeholder="Type in the square feet" required>
+        </div>
+        <div class="form-group">
+          <label for="bedrooms">bedrooms</label>
+          <input type="number" class="form-control" name="bedrooms" id="bedrooms"
+            placeholder="type in the number of bedrooms" required>
+        </div>
+        <div class="form-group">
+          <label for="bathrooms">Bathrooms</label>
+          <input type="number" class="form-control" name="bathrooms" id="bathrooms"
+            placeholder="Type in the number of bathrooms" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="text" class="form-control" name="price" id="price" placeholder="Type in the price" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" name="location" id="location" placeholder="Type in the location"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">Image</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" placeholder="Type in an image address"
+            required>
+        </div>
+        <button type="submit" class="btn btn-primary">Make House</button>
+      </form>
+    </div>
+
+    <div id="houses" class="row">
+    </div>
+
+    <div class="row justify-content-center">
+      <h1 class="col-12">Make a Job!</h1>
+      <form onsubmit="app.controllers.jobController.addJob(event)" class="col-5">
+        <div class="form-group">
+          <label for="type">Type</label>
+          <input type="text" class="form-control" name="type" id="type" placeholder="Type in a job title" required>
+        </div>
+        <div class="form-group">
+          <label for="pay">Pay</label>
+          <input type="text" class="form-control" name="pay" id="pay" placeholder="Type in the pay" required>
+        </div>
+        <div class="form-group">
+          <label for="hours">hours</label>
+          <input type="text" class="form-control" name="hours" id="hours" placeholder="type in the hours" required>
+        </div>
+        <div class="form-group">
+          <label for="location">location</label>
+          <input type="type" class="form-control" name="location" id="location" placeholder="Type in the location"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="degree">degree required</label>
+          <input type="text" class="form-control" name="degree" id="degree" placeholder="Type in the degree" required>
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">Image</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" placeholder="Type in an image address"
+            required>
+        </div>
+        <button type="submit" class="btn btn-primary">Make Job</button>
+      </form>
 
     </div>
+    <div id="jobs" class="row"></div>
+
+
+
+
+
+    <div class="row justify-content-center">
+      <h1 class='col-12'>find a pet</h1>
+      <form onsubmit="app.controllers.petController.addPet(event)">
+        <div class="form-group">
+          <label for="type">type of animal</label>
+          <input type="text" class="form-control" name="type" id="type" placeholder="type in the animal" required>
+        </div>
+        <div class="form-group">
+          <label for="color">color of animal</label>
+          <input type="text" class="form-control" name="color" id="color" placeholder="type in the color" required>
+        </div>
+        <div class="form-group">
+          <label for="gender">gender of animal</label>
+          <input type="text" class="form-control" name="gender" id="gender" placeholder="type in the animal gender"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="age">age of animal</label>
+          <input type="number" class="form-control" name="age" id="age" placeholder="type in the age" required>
+        </div>
+        <div class="form-group">
+          <label for="diet">diet of animal</label>
+          <input type="text" class="form-control" name="diet" id="diet" placeholder="type of diet for the animal"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="price">price of animal</label>
+          <input type="text" class="form-control" name="price" id="price" placeholder="price of animal" required>
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">type in Url</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" placeholder="type in the Url" required>
+        </div>
+        <button type="submit" class="btn btn-primary">make pet</button>
+      </form>
+    </div>
+    <div id="pets" class="row"></div>
+
   </div>
+
 
   <script src="app/main.js" type="module"></script>
 </body>
